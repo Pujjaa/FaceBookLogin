@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#445F8C">
+
+    <ImageView
+        android:id="@+id/imgFaceLogo"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/facebook_logo"
+        android:layout_margin="50dp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username or Email"
+        android:layout_margin="15sp"
+        android:layout_below="@id/imgFaceLogo"
+        android:inputType="text"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/etEmail"
+        android:inputType="text"
+        android:layout_margin="15sp"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        />
+    <Button
+        android:id="@+id/BtnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:layout_below="@id/etPassword"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#6080D6"/>
+
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up For Facebook"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/txtForget"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_margin="18dp"/>
+
+</RelativeLayout>
